@@ -6,13 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-import com.google.gson.JsonObject;
 import javafx.util.Pair;
 import org.json.JSONException;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 
 import org.apache.http.HttpEntity;
@@ -36,15 +31,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ro.pub.acs.mobiway.dao.JourneyDAO;
-import ro.pub.acs.mobiway.dao.JourneyDataDAO;
-import ro.pub.acs.mobiway.dao.LocationDAO;
-import ro.pub.acs.mobiway.dao.PolicyDAO;
-import ro.pub.acs.mobiway.dao.TrafficEventDAO;
-import ro.pub.acs.mobiway.dao.UserContactDAO;
-import ro.pub.acs.mobiway.dao.UserDAO;
-import ro.pub.acs.mobiway.dao.UserEventDAO;
-import ro.pub.acs.mobiway.dao.UserPolicyDAO;
+import ro.pub.acs.mobiway.dao.*;
 import ro.pub.acs.mobiway.model.*;
 import ro.pub.acs.mobiway.utils.Constants;
 
@@ -80,6 +67,9 @@ public class ServicesController {
 
 	@Autowired
 	private UserEventDAO userEventDAO;
+
+	@Autowired
+	private WaypointMeanSpeedDAO waypointMeanSpeedDAO;
 
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/location/getEvent", method = RequestMethod.PUT)
@@ -371,9 +361,136 @@ public class ServicesController {
 	@Autowired
 	private StreetSpeeds streetSpeeds;
 
+	@Autowired
+	private WaypointSpeeds waypointSpeeds;
+
+	private static float distFrom(double lat1, double lng1, double lat2, double lng2) {
+		double earthRadius = 6371000; //meters
+		double dLat = Math.toRadians(lat2-lat1);
+		double dLng = Math.toRadians(lng2-lng1);
+		double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+				Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) *
+						Math.sin(dLng/2) * Math.sin(dLng/2);
+		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+		float dist = (float) (earthRadius * c);
+
+		return dist;
+	}
+
+	private Waypoint getNearestWaypointOnSameStreet(Double waypointLongitude, Double waypointLatitde, String streetName) {
+		Waypoint foundWaypoint = null;
+		float minDist = 30;
+		for (Waypoint waypoint : waypointSpeeds.getWaypointToSpeed().keySet()) {
+			if (waypoint.getStreetName().equals(streetName)) {
+				float dist = distFrom(waypoint.getWaypointLat().doubleValue(), waypoint.getWaypointLong().doubleValue(), waypointLatitde, waypointLongitude);
+				if (dist < minDist) {
+					minDist = dist;
+					foundWaypoint = waypoint;
+				}
+			}
+		}
+		return foundWaypoint;
+	}
+
+	private void updateWaypointMeanSpeed(Position position) {
+		HttpClient httpClient = new DefaultHttpClient();
+		StringBuilder url = new StringBuilder();
+		url.append("http://router.project-osrm.org/nearest/v1/driving/");
+		url.append(position.getLongitude());
+		url.append(",");
+		url.append(position.getLatitude());
+		url.append(".json?number=1");
+
+		HttpGet httpGet = new HttpGet(url.toString());
+
+		HttpResponse httpGetResponse = null;
+		try {
+			httpGetResponse = httpClient.execute(httpGet);
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
+		HttpEntity httpGetEntity = httpGetResponse.getEntity();
+
+		if (httpGetEntity != null) {
+			String response = null;
+			try {
+				response = EntityUtils.toString(httpGetEntity);
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+
+			JSONObject data = null;
+			try {
+				data = new JSONObject(response);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			JSONArray waypointsArray = null;
+			try {
+				waypointsArray = data.getJSONArray("waypoints");
+			} catch (JSONException e) {
+				System.out.println(data);
+				return;
+			}
+
+			JSONObject firstWaypoint = null;
+			try {
+				firstWaypoint = waypointsArray.getJSONObject(0);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			String streetName = null;
+			try {
+				streetName = firstWaypoint.getString("name");
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			JSONArray location = null;
+			try {
+				location = firstWaypoint.getJSONArray("location");
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			Double waypointLongitude = null;
+			Double waypointLatitude = null;
+			try {
+				waypointLongitude = location.getDouble(0);
+				waypointLatitude = location.getDouble(1);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			Waypoint waypoint = getNearestWaypointOnSameStreet(waypointLongitude, waypointLatitude, streetName);
+
+			if (waypoint == null) {
+				//waypoint = new Waypoint(position.getLatitude(), position.getLongitude(), streetName);
+                waypoint = new Waypoint(waypointLatitude, waypointLongitude, streetName);
+			}
+
+			Map<Waypoint, Pair<Float, Integer>> waypointToSpeedAndNumberOfMeasurements = waypointSpeeds.getWaypointToSpeed();
+
+			if (waypointToSpeedAndNumberOfMeasurements.containsKey(waypoint)) {
+				Pair<Float, Integer> speedAndNumberOfMeasurements = waypointToSpeedAndNumberOfMeasurements.get(waypoint);
+				Float oldSpeedMean = speedAndNumberOfMeasurements.getKey();
+				Integer oldNoOfMeasurements = speedAndNumberOfMeasurements.getValue();
+				Float newSpeedMean = oldSpeedMean + (position.getSpeed() - oldSpeedMean) / oldNoOfMeasurements;
+				waypointToSpeedAndNumberOfMeasurements.put(waypoint, new Pair<>(newSpeedMean, oldNoOfMeasurements + 1));
+			} else {
+				waypointToSpeedAndNumberOfMeasurements.put(waypoint, new Pair<>(position.getSpeed(), 1));
+			}
+		}
+
+	}
+
 	@RequestMapping(value = "/position/update", method = RequestMethod.PUT)
 	public @ResponseBody boolean updatePosition(@RequestBody Position position,
 												@RequestHeader("X-Auth-Token") String authToken) {
+
+		updateWaypointMeanSpeed(position);
 
 		HttpClient httpClient = new DefaultHttpClient();
 
@@ -789,8 +906,8 @@ public class ServicesController {
 					String[] latLng = line.split(" ");
 					Location point = new Location();
 					point.setIdUser(0);
-					point.setLatitude(new Float(latLng[1]));
-					point.setLongitude(new Float(latLng[0]));
+					point.setLatitude(new Double(latLng[1]));
+					point.setLongitude(new Double(latLng[0]));
 					routePoints.add(point);
 				}
 			}
@@ -823,9 +940,11 @@ Calendar end = Calendar.getInstance();
 		try {
 			HttpClient httpClient = new DefaultHttpClient();
 			StringBuilder url = new StringBuilder();
-			url.append(Constants.URL_OSRM_API_LOCAL + "/viaroute?loc=");
-			url.append(locations.get(0).getLatitude()+","+locations.get(0).getLongitude()+"&loc=");
-			url.append(locations.get(1).getLatitude()+","+locations.get(1).getLongitude()+"&instructions=true&compression=false");
+			//url.append(Constants.URL_OSRM_API_LOCAL + "/viaroute?loc=");
+			url.append(Constants.URL_PROJECT_OSRM_API + "/route/v1/driving/");
+			url.append(locations.get(0).getLongitude()+","+locations.get(0).getLatitude() + ";");
+			url.append(locations.get(1).getLongitude()+","+locations.get(1).getLatitude()); //+"&instructions=true&compression=false");
+			url.append("?geometries=geojson&alternatives=1&steps=true");
 			System.out.println("URL2------------" + url.toString());
 			HttpGet httpGet = new HttpGet(url.toString());
 		    HttpResponse httpGetResponse = httpClient.execute(httpGet);
@@ -834,23 +953,73 @@ Calendar end = Calendar.getInstance();
 		    if (httpGetEntity != null) {  
 		    	String response = EntityUtils.toString(httpGetEntity);
 
-		    	JSONObject route = new JSONObject(response);
-		    	JSONArray viaPoints = route.getJSONArray("route_geometry");
+		    	JSONObject wholeJson = new JSONObject(response);
+		    	JSONArray routes = wholeJson.getJSONArray("routes");
+		    	JSONObject firstRoute = routes.getJSONObject(0);
+		    	JSONObject geometry = firstRoute.getJSONObject("geometry");
+		    	JSONArray coordinates = geometry.getJSONArray("coordinates");
+
+		    	JSONArray legs = firstRoute.getJSONArray("legs");
+		    	JSONObject firstLeg = legs.getJSONObject(0);
+		    	JSONArray steps = firstLeg.getJSONArray("steps");
 		    	
-		    	if(viaPoints != null){
+		    	if(coordinates != null){
+		    	    locations.get(0).setColor("BLACK");
 		    		routePoints.add(locations.get(0));
-		    		for(int i = 0; i < viaPoints.length(); i++){
-			    		String point = viaPoints.getString(i);
+		    		for(int i = 0; i < coordinates.length(); i++){
+			    		//String point = viaPoints.getString(i);
 			    	
 			    		Location location = new Location();
 			    		location.setIdUser(0);
 
-			    		JSONArray coord = viaPoints.getJSONArray(i);
-			    		location.setLatitude((float)coord.getDouble(0));
-	  		            location.setLongitude((float)coord.getDouble(1));
-			    		location.setSpeed(0);
+			    		JSONArray coord = coordinates.getJSONArray(i);
+			    		location.setLatitude(coord.getDouble(1));
+	  		            location.setLongitude(coord.getDouble(0));
+			    		//location.setSpeed(0);
+						loop: for (int j = 0; j < coordinates.length(); j++) {
+							JSONObject step = steps.getJSONObject(j);
+							JSONObject geometryStep = step.getJSONObject("geometry");
+							JSONArray coordinatesStep = geometryStep.getJSONArray("coordinates");
+
+							for (int k = 0; k < coordinatesStep.length(); k++) {
+								JSONArray coordinateStep = coordinatesStep.getJSONArray(k);
+								if (coordinateStep.getDouble(0) == coord.getDouble(0) &&
+										coordinateStep.getDouble(1) == coord.getDouble(1)) {
+									String streetName = step.getString("name");
+									List<WaypointMeanSpeed> waypointMeanSpeeds = waypointMeanSpeedDAO.getWaypointMeanSpeedByStreetName(streetName);
+									float minDist = 99999;
+									WaypointMeanSpeed minDistWaypoint = null;
+									if (waypointMeanSpeeds.size() > 0) {
+										for (WaypointMeanSpeed waypointMeanSpeed : waypointMeanSpeeds) {
+											float dist = distFrom(waypointMeanSpeed.getWaypointLat(), waypointMeanSpeed.getWaypointLong(), location.getLatitude(), location.getLongitude());
+											if (dist < minDist) {
+												minDist = dist;
+												minDistWaypoint = waypointMeanSpeed;
+											}
+										}
+									}
+
+									if (minDistWaypoint == null) {
+										location.setColor("BLACK");
+									} else if (minDistWaypoint.getMeanSpeed() > 10) {
+										location.setColor("GREEN");
+									} else if (minDistWaypoint.getMeanSpeed() > 5) {
+										location.setColor("YELLOW");
+									} else {
+										location.setColor("RED");
+									}
+
+									break loop;
+								}
+							}
+						}
+
+						if (location.getColor() == null) {
+							location.setColor("BLACK");
+						}
 			    		routePoints.add(location);
 			    	}
+                    locations.get(1).setColor("BLACK");
 		    		routePoints.add(locations.get(1));
 		    	}
 		    	
@@ -859,13 +1028,14 @@ Calendar end = Calendar.getInstance();
 			// Request can fail for a number of reasons
 			// Mainly if the data is not available for the specified coordinates
 			// exception.printStackTrace();
+			exception.printStackTrace();
 		}
 		
 Calendar end = Calendar.getInstance();
 		
-		if (Constants.DEBUG_MODE) {
+		/*if (Constants.DEBUG_MODE) {
 			saveRouteToFile("OSRM", routePoints, start, end);
-		}
+		}*/
 
 		
 		return routePoints;

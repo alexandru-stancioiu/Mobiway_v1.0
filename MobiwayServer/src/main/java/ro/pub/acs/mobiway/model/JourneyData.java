@@ -16,10 +16,10 @@ public class JourneyData implements Serializable {
 	private Integer id;
 
 	@Column(name = "latitude", nullable=true)
-	private Float latitude;
+	private Double latitude;
 
 	@Column(name = "longitude", nullable=true)
-	private Float longitude;
+	private Double longitude;
 
 	@Column(name = "speed", nullable=true)
 	private Integer speed;
@@ -50,7 +50,7 @@ public class JourneyData implements Serializable {
 		this.id = id;
 	}
 
-	public JourneyData(Integer id, Float latitude, Float longitude, Integer speed,
+	public JourneyData(Integer id, Double latitude, Double longitude, Integer speed,
 			Date timestamp) {
 		this.id = id;
 		this.latitude = latitude;
@@ -70,20 +70,28 @@ public class JourneyData implements Serializable {
 		this.id = id;
 	}
 
-	public Float getLatitude() {
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+
+	public Double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Float latitude) {
+	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
 
-	public Float getLongitude() {
+	public Double getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Float longitude) {
+	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
+	}
+
+	public void setTimestampUnix(Integer timestampUnix) {
+		this.timestampUnix = timestampUnix;
 	}
 
 	public Integer getSpeed() {

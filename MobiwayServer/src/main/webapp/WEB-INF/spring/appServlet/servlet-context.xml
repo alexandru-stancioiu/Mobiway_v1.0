@@ -36,6 +36,12 @@
 		</constructor-arg>
 	</bean>
 
+	<bean id="waypointSpeeds" class="ro.pub.acs.mobiway.model.WaypointSpeeds" depends-on="waypointMeanSpeedDao">
+		<constructor-arg>
+			<ref bean="waypointMeanSpeedDao" />
+		</constructor-arg>
+	</bean>
+
 	<bean id="taskScheduler" class="org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler">
 	</bean>
 
@@ -48,6 +54,18 @@
 		</constructor-arg>
 		<constructor-arg>
 			<ref bean="streetMeanSpeedDao" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="persistWaypointMeanSpeeds" class="ro.pub.acs.mobiway.service.PersistWaypointMeanSpeeds">
+		<constructor-arg>
+			<ref bean="taskScheduler" />
+		</constructor-arg>
+		<constructor-arg>
+			<ref bean="waypointSpeeds" />
+		</constructor-arg>
+		<constructor-arg>
+			<ref bean="waypointMeanSpeedDao" />
 		</constructor-arg>
 	</bean>
 

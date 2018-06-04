@@ -1,0 +1,6 @@
+ro\pub\cs\sci\profiles\JavaProfile.class
+ro\pub\cs\sci\extensions\JavaCheckListRegistrar.class
+ro\pub\cs\sci\util\InputStreamLanguageDecorator.class
+ro\pub\cs\sci\checks\ExternallyControlledFormatStringCheck.class
+ro\pub\cs\sci\profiles\QualityProfile.class
+ro\pub\cs\sci\SCIPlugin.class

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profile>
+    <name>CQ-Rules-Java-Profile</name>
+    <language>java</language>
+    <rules>
+        <rule>
+            <repositoryKey>SCIRules</repositoryKey>
+            <key>CWE-134</key>
+            <name>Use of Externally-Controlled Format String</name>
+            <tag>sci</tag>
+        </rule>
+    </rules>
+</profile>

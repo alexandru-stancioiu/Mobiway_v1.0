@@ -7,14 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f6c1cf0-1961-446c-bbfe-c2c8af10f5ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/mobiway.sql" afterPath="$PROJECT_DIR$/sql/mobiway.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Mobiway_v1.0.iml" afterPath="$PROJECT_DIR$/../.idea/Mobiway_v1.0.iml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Mobiway/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/Mobiway.iml" afterPath="$PROJECT_DIR$/../Mobiway/Mobiway.iml" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/app/app.iml" afterPath="$PROJECT_DIR$/../Mobiway/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/app/build.gradle" afterPath="$PROJECT_DIR$/../Mobiway/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/app/src/main/java/ro/pub/acs/mobiway/general/Constants.java" afterPath="$PROJECT_DIR$/../Mobiway/app/src/main/java/ro/pub/acs/mobiway/general/Constants.java" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/build.gradle" afterPath="$PROJECT_DIR$/../Mobiway/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../Mobiway/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../Mobiway/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/JourneyData.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/JourneyData.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,132 +40,203 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="ServicesController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServicesController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="504" column="28" lean-forward="true" selection-start-line="504" selection-start-column="28" selection-end-line="504" selection-end-column="28" />
+            <state relative-caret-position="167">
+              <caret line="983" column="61" lean-forward="false" selection-start-line="983" selection-start-column="61" selection-end-line="983" selection-end-column="61" />
               <folding>
-                <element signature="e#5890#5898#0" expanded="true" />
-                <element signature="e#19088#19094#0" expanded="true" />
-                <element signature="e#19952#19958#0" expanded="true" />
-                <element signature="e#20004#20014#0" expanded="true" />
-                <element signature="e#20549#20555#0" expanded="true" />
-                <element signature="e#20936#20944#0" expanded="true" />
-                <element signature="e#21881#21888#0" expanded="true" />
-                <element signature="e#23443#23453#0" expanded="true" />
-                <element signature="e#25422#25432#0" expanded="true" />
+                <element signature="e#5380#5388#0" expanded="true" />
+                <element signature="e#22636#22642#0" expanded="true" />
+                <element signature="e#23500#23506#0" expanded="true" />
+                <element signature="e#23552#23562#0" expanded="true" />
+                <element signature="e#24097#24103#0" expanded="true" />
+                <element signature="e#24484#24492#0" expanded="true" />
+                <element signature="e#25429#25436#0" expanded="true" />
+                <element signature="e#26991#27001#0" expanded="true" />
+                <element signature="e#28972#28982#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelegatingErrorHandlingRunnable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+      <file leaf-file-name="JSONArray.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20090211/json-20090211.jar!/org/json/JSONArray.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="142" column="18" lean-forward="false" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+              <folding>
+                <marker date="1478012861739" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1478012861739" expanded="false" signature="132:313" ph="..." />
+                <marker date="1478012861739" expanded="false" signature="398:409" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="444:450" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="512:1846" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="1903:1947" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="1986:1997" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="2069:2075" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="2129:2388" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="2445:2808" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="2879:3274" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="3329:3529" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="3592:4080" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="4141:4432" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="4487:4627" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="4694:4927" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="4996:5232" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="5289:5431" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="5492:5541" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="5578:5589" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="5635:5641" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="5700:6039" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="6064:6075" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="6106:6112" ph=" }" />
+                <marker date="1478012861739" expanded="false" signature="6145:6156" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="6233:6239" ph=" }" />
+                <marker date="1478012861739" expanded="false" signature="6280:6291" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="6327:6333" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="6389:6522" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="6561:6572" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="6612:6618" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="6671:6803" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="6836:6847" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="6875:6881" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="6925:7054" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="7100:7212" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="7260:7374" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="7409:7420" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="7450:7456" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="7503:7633" ph="{...}" />
+                <marker date="1478012861739" expanded="false" signature="7672:7683" ph=" { " />
+                <marker date="1478012861739" expanded="false" signature="7715:7721" ph=" }" />
+                <marker date="1478012861739" expanded="true" signature="7774:7873" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="7914:8007" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8051:8128" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8189:8328" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8365:8440" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8478:8550" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8587:8665" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8705:8769" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="8841:8940" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9015:9098" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9169:9249" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9317:9398" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9467:9545" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9613:9697" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="9768:10236" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="10310:10656" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="10687:10825" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="10885:10931" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="10994:12037" ph="{...}" />
+                <marker date="1478012861739" expanded="true" signature="12097:12917" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+              <folding>
+                <element signature="e#5748#5749#0" expanded="true" />
+                <element signature="e#5784#5785#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaypointMeanSpeedDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostTrafficStatusToFacebook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java">
+      <file leaf-file-name="JourneyData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/JourneyData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="409">
+              <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1176#1645#0" expanded="true" />
-                <element signature="e#1644#1645#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
+                <element signature="e#1721#1722#0" expanded="true" />
+                <element signature="e#1766#1767#0" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1830#1831#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1933#1934#0" expanded="true" />
+                <element signature="e#1989#1990#0" expanded="true" />
+                <element signature="e#2030#2031#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreetSpeeds.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java">
+      <file leaf-file-name="MgmtAppController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreetMeanSpeedDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreetMeanSpeedDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersistMeanSpeeds.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobiway.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/mobiway.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="357" column="2" lean-forward="true" selection-start-line="357" selection-start-column="2" selection-end-line="357" selection-end-column="2" />
+            <state relative-caret-position="633">
+              <caret line="282" column="34" lean-forward="false" selection-start-line="282" selection-start-column="34" selection-end-line="282" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-99">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#1312#1313#0" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1370#1371#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1547#1548#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1614#1615#0" expanded="true" />
+                <element signature="e#1645#1646#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1701#1702#0" expanded="true" />
+                <element signature="e#1748#1749#0" expanded="true" />
+                <element signature="e#1781#1782#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="103" lean-forward="false" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+            <state relative-caret-position="265">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreetMeanSpeed.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetMeanSpeed.java">
+      <file leaf-file-name="WaypointMeanSpeed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/WaypointMeanSpeed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1336#1337#0" expanded="true" />
-                <element signature="e#1368#1369#0" expanded="true" />
-                <element signature="e#1429#1430#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaypointMeanSpeedDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,37 +252,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>2863</find>
-      <find>28</find>
-      <find>286</find>
-      <find>Session session = sessionFactory.getCurrentSession();</find>
-      <find>getEvent</find>
-      <find>getSpeedStatistics</find>
-      <find>event</find>
-      <find>speed</find>
-      <find>Speed</find>
-      <find>/location/update</find>
-      <find>/update</find>
-      <find>RestController</find>
-      <find>return false</find>
-      <find>httpClient</find>
-      <find>JSONObject</find>
-      <find>checkServer</find>
-      <find>/location</find>
-      <find>/position</find>
-      <find>.sql</find>
-      <find>create table</find>
-      <find>float</find>
-      <find>trafficEventDao</find>
-      <find>userEventDao</find>
-      <find>journeyDao</find>
-      <find>PersistMean</find>
-      <find>spring-social-facebook</find>
-      <find>spring-social</find>
-      <find>Facebook</find>
-      <find>Http</find>
-      <find>Transaction tx</find>
+      <find>GET</find>
+      <find>osrm</find>
+      <find>StreetSpeeds</find>
+      <find>streetMeanSpeedDao</find>
+      <find>PersistMeanSpee</find>
+      <find>PersistWay</find>
+      <find>WaypointMeanSpeed</find>
+      <find>StreetMeanSpeed</find>
+      <find>waypoints</find>
+      <find>position</find>
+      <find>.put</find>
+      <find>expceti</find>
+      <find>nu merge</find>
+      <find>catch</find>
+      <find>system.out</find>
+      <find>excepti</find>
+      <find>except</find>
+      <find>route</find>
+      <find>http</find>
+      <find>http://</find>
+      <find>getDouble</find>
+      <find>WaypointMeanSpeedDAO</find>
+      <find>AICII</find>
+      <find>dist</find>
+      <find>exception</find>
+      <find>nullpo</find>
+      <find>geojson</find>
+      <find>/nearest</find>
+      <find>/route</find>
+      <find>steps</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -213,27 +298,36 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/database.properties" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/LocationDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetMeanSpeed.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" />
         <option value="$PROJECT_DIR$/sql/mobiway.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Waypoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/WaypointSpeeds.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistWaypointMeanSpeeds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/JourneyData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/WaypointMeanSpeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java" />
       </list>
     </option>
   </component>
@@ -265,9 +359,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="-11" />
     <option name="width" value="2894" />
-    <option name="height" value="1732" />
+    <option name="height" value="1731" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -287,6 +381,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,18 +396,280 @@
               <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mobiway" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobiwayServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="appServlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.hibernate:hibernate-core:4.3.5.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.hibernate:hibernate-core:4.3.5.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-4.3.5.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.hibernate:hibernate-core:4.3.5.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-4.3.5.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.hibernate:hibernate-core:4.3.5.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-4.3.5.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.json:json:20090211" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.json:json:20090211" type="70bed36:NamedLibraryElementNode" />
+              <item name="json-20090211.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.json:json:20090211" type="70bed36:NamedLibraryElementNode" />
+              <item name="json-20090211.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduling" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-tx:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-tx:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-tx-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-tx:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-tx-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-tx:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-tx-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobiwayServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-tx:4.0.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-tx-4.0.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Multi-Client-Server-chat-application" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -329,7 +688,90 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.9" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -402,102 +844,11 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -808,9 +1159,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -834,12 +1196,23 @@
       <workItem from="1502382738451" duration="17601000" />
       <workItem from="1503424007878" duration="12000" />
       <workItem from="1503424099444" duration="17472000" />
-      <workItem from="1503444322326" duration="15342000" />
+      <workItem from="1503444322326" duration="17256000" />
+      <workItem from="1509888818083" duration="44000" />
+      <workItem from="1509888940376" duration="2551000" />
+      <workItem from="1510558268626" duration="615000" />
+      <workItem from="1511029543633" duration="47000" />
+      <workItem from="1511029651850" duration="621000" />
+      <workItem from="1514519983018" duration="2520000" />
+      <workItem from="1514610387106" duration="706000" />
+      <workItem from="1515251391292" duration="124000" />
+      <workItem from="1527356094917" duration="28817000" />
+      <workItem from="1527687227088" duration="1788000" />
+      <workItem from="1527861288216" duration="28893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80170000" />
+    <option name="totallyTimeSpent" value="148810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,11 +1224,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="1447" height="866" extended-state="0" />
+    <frame x="-11" y="0" width="2894" height="1731" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52656674" sideWeight="0.62446046" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6287234" sideWeight="0.49744377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -863,20 +1236,20 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4515689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38335606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34604904" sideWeight="0.80143887" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292553" sideWeight="0.49744377" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39100817" sideWeight="0.4643885" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.4989775" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3383356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23648648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20662346" sideWeight="0.8268041" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.4989775" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38896456" sideWeight="0.68021584" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.4989775" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52656674" sideWeight="0.37553957" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18705036" sideWeight="0.8374101" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20662346" sideWeight="0.17319588" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18705036" sideWeight="0.16258992" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2618705" sideWeight="0.50429183" order="2" side_tool="true" content_ui="tabs" />
@@ -899,75 +1272,63 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>148</line>
+          <line>138</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>155</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>183</line>
+          <line>173</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>195</line>
+          <line>185</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>219</line>
+          <line>209</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>345</line>
+          <line>335</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>590</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>634</line>
+          <line>751</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>675</line>
+          <line>792</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>817</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>762</line>
+          <line>879</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
-          <line>689</line>
+          <line>806</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
@@ -978,34 +1339,46 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>1040</line>
           <properties />
-          <option name="timeStamp" value="105" />
+          <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java</url>
-          <line>32</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>971</line>
           <properties />
-          <option name="timeStamp" value="121" />
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>1019</line>
           <properties />
-          <option name="timeStamp" value="123" />
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>1016</line>
           <properties />
-          <option name="timeStamp" value="132" />
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>1011</line>
+          <properties />
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java</url>
+          <line>1030</line>
+          <properties />
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="133" />
+      <option name="time" value="194" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1013,166 +1386,25 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>routePoints</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>coordinates</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserEventDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/criterion/CriteriaSpecification.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Policy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/JourneyDataDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/TrafficEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/mvc.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/PolicyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/JourneyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/TrafficEventDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserPolicyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserPolicyDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#422#423#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserEventDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#419#420#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#591#592#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/TrafficEventDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#431#432#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,19 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#535#536#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/JourneyDataDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#629#630#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,10 +1419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#540#541#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,18 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#413#414#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,15 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
           <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,20 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#434#435#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="false" />
-            <element signature="e#10148#10149#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1317,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-747">
           <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,18 +1511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
           <caret line="163" column="11" lean-forward="false" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-          <folding>
-            <element signature="e#6390#6391#0" expanded="false" />
-            <element signature="e#6438#6439#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1356,123 +1522,809 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Position.java">
+    <entry file="file://$PROJECT_DIR$/sql/mobiway.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="191">
+          <caret line="335" column="2946" lean-forward="false" selection-start-line="335" selection-start-column="2946" selection-end-line="335" selection-end-column="2946" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/Criteria.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="100" column="11" lean-forward="false" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/JourneyDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#629#630#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/LocationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetMeanSpeed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/spring-dao.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="429">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.3.RELEASE/spring-tx-4.0.3.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Waypoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2211">
+          <caret line="74" column="15" lean-forward="false" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1485107047198" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1485107047198" expanded="false" signature="137:304" ph="..." />
+            <marker date="1485107047198" expanded="true" signature="1036:1054" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="1206:1224" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="2128:2146" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="2211:2229" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="2445:2463" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="2809:2827" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="3026:3044" ph="/**...*/" />
+            <marker date="1485107047198" expanded="true" signature="4380:4796" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SessionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12474">
+          <caret line="544" column="17" lean-forward="false" selection-start-line="544" selection-start-column="17" selection-end-line="544" selection-end-column="17" />
+          <folding>
+            <marker date="1485107047198" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1485107047198" expanded="false" signature="146:6259" ph="..." />
+            <marker date="1485107047198" expanded="true" signature="8145:11863" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="10564:11456" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="10641:10660" ph="{}" />
+            <marker date="1485107047198" expanded="true" signature="10743:11006" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="11108:11442" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="11917:11928" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="11988:11994" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="12020:12131" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="12166:12515" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="12548:12630" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="12688:13846" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="12688:13865" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="13907:13918" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="13926:13937" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="13952:13958" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="13971:13977" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="14006:14017" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14025:14036" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14050:14056" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="14069:14075" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="14104:14115" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14123:14134" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14151:14157" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="14170:14176" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="14206:14290" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="14329:14340" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14396:14402" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="14455:14466" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="14507:14513" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="14546:14762" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="14801:15018" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="15051:15132" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="15195:15336" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="15371:15539" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="15586:15727" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="15790:16055" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="16126:16353" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="16401:16472" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="16519:16599" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="16649:16814" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="16899:17006" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="17097:17426" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="17536:18082" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="18133:18432" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="18502:18513" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="18546:18552" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="18623:18693" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="18734:18745" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="18804:18810" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="18849:18860" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="18917:18923" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="18966:18977" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="19036:19042" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="19083:19094" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="19151:19157" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="19196:19207" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="19262:19268" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="19305:19316" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="19369:19375" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="19403:19414" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="19446:19452" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="19534:20491" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="20578:20999" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="21060:21312" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="21372:21562" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="21606:21725" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="21797:21853" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="21941:22025" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="22086:22523" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="22581:22592" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="22641:22647" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="22725:22875" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="22944:22996" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="23087:23173" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="23234:23700" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="23763:23810" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="23895:23976" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="24031:24463" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="24565:24646" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="24713:24787" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="24870:24939" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="25022:25102" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="25165:25176" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="25228:25234" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="25279:25613" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="25699:25776" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="25843:25894" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="25999:26091" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="26161:26522" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="26573:26991" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="27084:27168" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="27242:27293" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="27405:27504" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="27581:27950" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="28008:28434" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="28520:28600" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="28667:28723" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="28826:28914" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="28963:29407" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="29473:29826" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="29892:29955" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="30040:30115" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="30255:30373" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="30450:30537" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="30586:30928" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="31000:31361" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="31442:31564" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="31651:31714" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="31801:31863" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="31949:32004" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="32090:32144" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="32240:32661" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="32789:33225" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="33331:33426" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="33538:33619" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="33725:33819" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="33931:34011" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34116:34203" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34314:34387" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34492:34578" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34689:34761" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34835:34917" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="34991:35074" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="35138:35219" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="35283:35365" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="35441:35528" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="35604:35692" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="35756:36100" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="36169:36553" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="36620:36679" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="36765:36842" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="36928:37003" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="37095:37172" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="37283:37373" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="37481:37576" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="37627:37973" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="38046:38410" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="38509:38592" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="38710:38805" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="38860:39214" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="39279:39340" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="39387:39725" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="39812:40322" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="40379:41102" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="41154:41746" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="41826:42395" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="42491:43227" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="43331:43915" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="44065:44690" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="44793:45308" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="45419:45897" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="45968:46349" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="46424:46620" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="46714:46803" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="46905:47276" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="47328:47506" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="47544:47626" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="47664:47746" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="47798:47976" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="48044:48142" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="48212:48348" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="48430:49010" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="49091:49844" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="49912:50207" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="50267:50360" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="50514:52605" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="52727:53306" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="53435:53741" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="53815:53969" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="54039:54178" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="54238:54385" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="54441:54573" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="54653:55347" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="55415:56989" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="57069:58894" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="58990:59310" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="59355:59946" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="59997:60125" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="60174:60297" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="60372:60516" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="60620:60783" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="60882:61041" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="61174:61783" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="61901:62627" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="62686:62766" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="62881:63365" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="63420:63924" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="63973:64607" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="64697:64878" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="64955:65058" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="65116:65234" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="65276:65360" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="65399:65410" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="65440:65446" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="65477:65786" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="65828:65942" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="65998:66119" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="66166:66265" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="66302:66374" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="66414:66425" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="66476:66482" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="66544:66620" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="66674:66821" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="66884:67028" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="67096:67440" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="67145:67289" ph="accept(workExecutor, connection) → {" />
+            <marker date="1485107047198" expanded="false" signature="67387:67402" ph="}" />
+            <marker date="1485107047198" expanded="true" signature="67530:67856" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="67576:67711" ph="accept(workExecutor, connection) → {" />
+            <marker date="1485107047198" expanded="false" signature="67796:67811" ph="}" />
+            <marker date="1485107047198" expanded="true" signature="67940:68033" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="68074:68081" ph="{}" />
+            <marker date="1485107047198" expanded="true" signature="68145:68226" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="68285:68296" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="68329:68335" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="68391:68513" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="68565:68713" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="68764:68906" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="68978:69146" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="69215:69382" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="69419:69562" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="69600:69719" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="69774:69928" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70015:70092" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70173:70240" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70322:70390" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70439:70529" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70578:70677" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="70773:72178" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="72252:73301" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="73340:73351" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="73399:73405" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="73443:73602" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="73673:73956" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="73969:74022" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="74157:76555" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="74292:74816" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="74883:74981" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="75047:75062" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="75098:75108" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="75203:75301" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="75385:75486" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="75603:75705" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="75765:75980" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="76032:76549" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="76678:78559" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="76817:76930" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="76991:77089" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="77149:77164" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="77200:77210" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="77293:77385" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="77464:77564" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="77675:77777" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="77822:78018" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="78055:78553" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="78616:82473" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="78840:79161" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="79226:79324" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="79388:79403" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="79439:79449" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="79536:79616" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="79696:79773" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="79870:80253" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="80327:81969" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="82042:82361" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="82414:82429" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="82457:82467" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="82550:85291" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="82722:82737" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="82776:82786" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="82848:82946" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="83007:83022" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="83058:83068" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="83158:83238" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="83298:84369" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="84421:85285" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="85350:86600" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="85448:85561" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="85600:85615" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="85653:85663" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="85723:85811" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="85844:85859" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="85896:85906" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="85959:86045" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="86080:86095" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="86130:86140" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="86193:86275" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="86362:86450" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="86518:86594" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="86681:87498" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="86732:86743" ph="{}" />
+            <marker date="1485107047198" expanded="true" signature="86800:87492" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="87609:91123" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="87766:87963" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="88037:88142" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="88217:88351" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="88438:88610" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="88661:88676" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="88726:88736" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="88787:88872" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="88934:89028" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="89089:89181" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="89230:89245" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="89305:89315" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="89377:89478" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="89488:89506" ph="/**...*/" />
+            <marker date="1485107047198" expanded="false" signature="89583:89598" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="89623:89633" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="89708:89792" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="89845:89860" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="89911:89921" ph=" }" />
+            <marker date="1485107047198" expanded="true" signature="89993:90075" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="90180:90284" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="90373:90475" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="90542:90622" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="90713:90817" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="90905:90986" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="91040:91117" ph="{...}" />
+            <marker date="1485107047198" expanded="true" signature="91185:92209" ph="{...}" />
+            <marker date="1485107047198" expanded="false" signature="91281:91296" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91319:91329" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91375:91390" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91433:91443" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91484:91499" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91539:91549" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91614:91629" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91681:91691" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91738:91753" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91797:91807" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91867:91882" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="91934:91944" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="91993:92008" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="92053:92063" ph=" }" />
+            <marker date="1485107047198" expanded="false" signature="92125:92140" ph=" { " />
+            <marker date="1485107047198" expanded="false" signature="92193:92203" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/WaypointSpeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistWaypointMeanSpeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/StreetMeanSpeedDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PostTrafficStatusToFacebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1176#1645#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetSpeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/StreetMeanSpeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/service/PersistMeanSpeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="504" column="28" lean-forward="true" selection-start-line="504" selection-start-column="28" selection-end-line="504" selection-end-column="28" />
-          <folding>
-            <element signature="e#5890#5898#0" expanded="true" />
-            <element signature="e#19088#19094#0" expanded="true" />
-            <element signature="e#19952#19958#0" expanded="true" />
-            <element signature="e#20004#20014#0" expanded="true" />
-            <element signature="e#20549#20555#0" expanded="true" />
-            <element signature="e#20936#20944#0" expanded="true" />
-            <element signature="e#21881#21888#0" expanded="true" />
-            <element signature="e#23443#23453#0" expanded="true" />
-            <element signature="e#25422#25432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/mobiway.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="357" column="2" lean-forward="true" selection-start-line="357" selection-start-column="2" selection-end-line="357" selection-end-column="2" />
+        <state relative-caret-position="483">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="103" lean-forward="false" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+        <state relative-caret-position="265">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/JourneyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+          <folding>
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/MgmtAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="282" column="34" lean-forward="false" selection-start-line="282" selection-start-column="34" selection-end-line="282" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20090211/json-20090211.jar!/org/json/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="142" column="18" lean-forward="false" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+          <folding>
+            <marker date="1478012861739" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1478012861739" expanded="false" signature="132:313" ph="..." />
+            <marker date="1478012861739" expanded="false" signature="398:409" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="444:450" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="512:1846" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="1903:1947" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="1986:1997" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="2069:2075" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="2129:2388" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="2445:2808" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="2879:3274" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="3329:3529" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="3592:4080" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="4141:4432" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="4487:4627" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="4694:4927" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="4996:5232" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="5289:5431" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="5492:5541" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="5578:5589" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="5635:5641" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="5700:6039" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="6064:6075" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="6106:6112" ph=" }" />
+            <marker date="1478012861739" expanded="false" signature="6145:6156" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="6233:6239" ph=" }" />
+            <marker date="1478012861739" expanded="false" signature="6280:6291" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="6327:6333" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="6389:6522" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="6561:6572" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="6612:6618" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="6671:6803" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="6836:6847" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="6875:6881" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="6925:7054" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="7100:7212" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="7260:7374" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="7409:7420" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="7450:7456" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="7503:7633" ph="{...}" />
+            <marker date="1478012861739" expanded="false" signature="7672:7683" ph=" { " />
+            <marker date="1478012861739" expanded="false" signature="7715:7721" ph=" }" />
+            <marker date="1478012861739" expanded="true" signature="7774:7873" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="7914:8007" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8051:8128" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8189:8328" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8365:8440" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8478:8550" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8587:8665" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8705:8769" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="8841:8940" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9015:9098" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9169:9249" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9317:9398" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9467:9545" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9613:9697" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="9768:10236" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="10310:10656" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="10687:10825" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="10885:10931" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="10994:12037" ph="{...}" />
+            <marker date="1478012861739" expanded="true" signature="12097:12917" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/dao/WaypointMeanSpeedDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/WaypointMeanSpeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#1312#1313#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/pub/acs/mobiway/controller/ServicesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="983" column="61" lean-forward="false" selection-start-line="983" selection-start-column="61" selection-end-line="983" selection-end-column="61" />
+          <folding>
+            <element signature="e#5380#5388#0" expanded="true" />
+            <element signature="e#22636#22642#0" expanded="true" />
+            <element signature="e#23500#23506#0" expanded="true" />
+            <element signature="e#23552#23562#0" expanded="true" />
+            <element signature="e#24097#24103#0" expanded="true" />
+            <element signature="e#24484#24492#0" expanded="true" />
+            <element signature="e#25429#25436#0" expanded="true" />
+            <element signature="e#26991#27001#0" expanded="true" />
+            <element signature="e#28972#28982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>MobiwayServer:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MobiwayServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

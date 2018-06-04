@@ -6,10 +6,11 @@ import java.util.Date;
 public class Location {
 
     private Integer idUser;
-    private Float latitude;
-    private Float longitude;
+    private Double latitude;
+    private Double longitude;
     private Integer speed;
     private String timestamp;
+    private String color;
 
     public Location() {
     }
@@ -18,13 +19,22 @@ public class Location {
         this.idUser = idUser;
     }
 
-    public Location(Integer idUser, Float latitude, Float longitude, Integer speed,
-                    String timestamp) {
+    public Location(Integer idUser, Double latitude, Double longitude, Integer speed,
+                    String timestamp, String color) {
         this.idUser = idUser;
         this.latitude = latitude;
         this.longitude = longitude;
         this.speed = speed;
         this.timestamp = timestamp;
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public Integer getIdUser() {
@@ -35,20 +45,24 @@ public class Location {
         this.idUser = idUser;
     }
 
-    public Float getLatitude() {
+    public Double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Float latitude) {
+    public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
 
-    public Float getLongitude() {
+    public Double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(Float longitude) {
+    public void setLongitude(Double longitude) {
         this.longitude = longitude;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 
     public Integer getSpeed() {

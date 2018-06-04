@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,6 +43,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -140,17 +142,17 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                     ro.pub.acs.mobiway.rest.model.Location location2 = new ro.pub.acs.mobiway.rest.model.Location();
 
                     if (routingHelper.getUseGpsForSrc()) {
-                        location1.setLatitude((float) lastLocation.getLatitude());
-                        location1.setLongitude((float) lastLocation.getLongitude());
+                        location1.setLatitude(lastLocation.getLatitude());
+                        location1.setLongitude(lastLocation.getLongitude());
                     } else {
                         LatLng srcLoc = routingHelper.getSrcLocation();
-                        location1.setLatitude((float) srcLoc.latitude);
-                        location1.setLongitude((float) srcLoc.longitude);
+                        location1.setLatitude(srcLoc.latitude);
+                        location1.setLongitude(srcLoc.longitude);
                     }
 
                     LatLng dstLoc = routingHelper.getDstLocation();
-                    location2.setLatitude((float) dstLoc.latitude);
-                    location2.setLongitude((float) dstLoc.longitude);
+                    location2.setLatitude(dstLoc.latitude);
+                    location2.setLongitude(dstLoc.longitude);
 
                     locations.add(location1);
                     locations.add(location2);
@@ -332,9 +334,9 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                         //handler.removeCallbacks(this);
                         //Looper.myLooper().quit();
 
-                        handler.postDelayed(this, 1000);
+                        handler.postDelayed(this, 3000);
                     }
-                }, 1000);
+                }, 3000);
 
                 Looper.loop();
             }
@@ -564,8 +566,8 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
         }
 
         final ro.pub.acs.mobiway.rest.model.Location location = new ro.pub.acs.mobiway.rest.model.Location();
-        location.setLatitude(spm.getShareLocationEnabled() ? (float) latitude : null);
-        location.setLongitude(spm.getShareLocationEnabled() ? (float) longitude : null);
+        location.setLatitude(spm.getShareLocationEnabled() ? latitude : null);
+        location.setLongitude(spm.getShareLocationEnabled() ? longitude : null);
         location.setSpeed(spm.getShareSpeedEnabled() ? (int) speed : null);
         location.setIdUser(spm.getAuthUserId());
         location.setTimestamp(new Date());
@@ -857,8 +859,8 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                     RestClient restClient = new RestClient();
                     final ro.pub.acs.mobiway.rest.model.Location location = new ro.pub.acs.mobiway.rest.model.Location();
                     location.setIdUser(spm.getAuthUserId());
-                    location.setLatitude((float)spm.getLatitude());
-                    location.setLongitude((float)spm.getLongitude());
+                    location.setLatitude(spm.getLatitude());
+                    location.setLongitude(spm.getLongitude());
 
                     List<Place> result = restClient.getApiService().getEvent(location);
                     showPlacesOnMap(result);
@@ -920,11 +922,30 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                PolylineOptions polylineOptions = new PolylineOptions();
-                for (ro.pub.acs.mobiway.rest.model.Location point : points) {
-                    polylineOptions.add(new LatLng(point.getLatitude(), point.getLongitude()));
+
+                for (int i = 0; i < points.size() - 1; i++) {
+                    PolylineOptions polylineOptions = new PolylineOptions();
+                    ro.pub.acs.mobiway.rest.model.Location previousPoint = points.get(i);
+                    ro.pub.acs.mobiway.rest.model.Location nextPoint = points.get(i + 1);
+                    polylineOptions.add(new LatLng(previousPoint.getLatitude(), previousPoint.getLongitude()));
+                    polylineOptions.add(new LatLng(nextPoint.getLatitude(), nextPoint.getLongitude()));
+                    if (previousPoint.getColor() == null) {
+                        polylineOptions.color(Color.BLACK);
+                    } else if (previousPoint.getColor().equals("BLACK")) {
+                        polylineOptions.color(Color.BLACK);
+                    } else if (previousPoint.getColor().equals("GREEN")) {
+                        polylineOptions.color(Color.GREEN);
+                    } else if (previousPoint.getColor().equals("YELLOW")) {
+                        polylineOptions.color(Color.YELLOW);
+                    } else if (previousPoint.getColor().equals("RED")) {
+                        polylineOptions.color(Color.RED);
+                    } else {
+                        polylineOptions.color(Color.BLACK);
+                    }
+                    aPolyline.add(googleMap.addPolyline(polylineOptions));
                 }
-                aPolyline.add(googleMap.addPolyline(polylineOptions));
+
+
             }
         });
     }

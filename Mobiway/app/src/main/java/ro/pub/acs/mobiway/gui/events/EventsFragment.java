@@ -88,8 +88,8 @@ public class EventsFragment extends PreferenceFragment{
 
                             final ro.pub.acs.mobiway.rest.model.Location location = new ro.pub.acs.mobiway.rest.model.Location();
                             location.setIdUser(spm.getAuthUserId());
-                            location.setLatitude((float)spm.getLatitude());
-                            location.setLongitude((float)spm.getLongitude());
+                            location.setLatitude(spm.getLatitude());
+                            location.setLongitude(spm.getLongitude());
 
                             Log.v(TAG, "eventName" + eventName);
                             Log.v(TAG, "distance" + distance);

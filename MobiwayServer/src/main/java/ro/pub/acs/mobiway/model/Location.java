@@ -18,10 +18,10 @@ public class Location implements Serializable {
 	private Integer idUser;
 
 	@Column(name = "latitude", nullable = true)
-	private Float latitude;
+	private Double latitude;
 
 	@Column(name = "longitude", nullable = true)
-	private Float longitude;
+	private Double longitude;
 
 	@Column(name = "speed", nullable = true)
 	private Integer speed;
@@ -29,6 +29,8 @@ public class Location implements Serializable {
 	@Column(name = "timestamp")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date timestamp;
+
+	private String color;
 
 	@JoinColumn(name = "id_user", referencedColumnName = "id", insertable = false, updatable = false)
 	@Transient
@@ -42,13 +44,22 @@ public class Location implements Serializable {
 		this.idUser = idUser;
 	}
 
-	public Location(Integer idUser, Float latitude, Float longitude, Integer speed,
-			Date timestamp) {
+	public Location(Integer idUser, Double latitude, Double longitude, Integer speed,
+			Date timestamp, String color) {
 		this.idUser = idUser;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.speed = speed;
 		this.timestamp = timestamp;
+		this.color = color;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	public Integer getIdUser() {
@@ -59,19 +70,19 @@ public class Location implements Serializable {
 		this.idUser = idUser;
 	}
 
-	public Float getLatitude() {
+	public Double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Float latitude) {
+	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
 
-	public Float getLongitude() {
+	public Double getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Float longitude) {
+	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
 

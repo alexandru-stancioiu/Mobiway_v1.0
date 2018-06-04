@@ -21,7 +21,8 @@ public abstract class Constants {
     /* URLs for WEB Services */
     public static final String APP_NAME     = "Mobiway";
     //public static final String SERVICES_URL = "http://mobiway.hpc.pub.ro:8082/MobiwayServer/services";
-    public static final String SERVICES_URL = "http://188.26.220.171:8080/services";
+    //public static final String SERVICES_URL = "http://192.168.10.105:8080/services";
+    public static final String SERVICES_URL = "http://5.12.69.12:8080/services";
 
     public static final String URL_CHECK_SERVER_CONN    = "/checkServerConn";
     public static final String URL_CREATE_ACCOUNT       = "/signup/userpass";

@@ -151,8 +151,8 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
             // The Cursor is now set to the right position
             ro.pub.acs.mobiway.rest.model.Location savedDbLocation = new ro.pub.acs.mobiway.rest.model.Location();
             savedDbLocation.setIdUser(cursor.getInt(cursor.getColumnIndex(USER_ID)));
-            savedDbLocation.setLatitude(cursor.getFloat(cursor.getColumnIndex(LATITUDE)));
-            savedDbLocation.setLongitude(cursor.getFloat(cursor.getColumnIndex(LONGITUDE)));
+            savedDbLocation.setLatitude(cursor.getDouble(cursor.getColumnIndex(LATITUDE)));
+            savedDbLocation.setLongitude(cursor.getDouble(cursor.getColumnIndex(LONGITUDE)));
             savedDbLocation.setSpeed(cursor.getInt(cursor.getColumnIndex(SPEED)));
             String dateTime = cursor.getString(cursor.getColumnIndex(DATE));
 

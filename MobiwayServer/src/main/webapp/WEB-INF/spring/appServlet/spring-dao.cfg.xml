@@ -65,5 +65,11 @@
 			<ref bean="sessionFactory" />
 		</constructor-arg>
 	</bean>
+
+	<bean id="waypointMeanSpeedDao" class="ro.pub.acs.mobiway.dao.WaypointMeanSpeedDAOImpl">
+		<constructor-arg>
+			<ref bean="sessionFactory" />
+		</constructor-arg>
+	</bean>
 	
 </beans>

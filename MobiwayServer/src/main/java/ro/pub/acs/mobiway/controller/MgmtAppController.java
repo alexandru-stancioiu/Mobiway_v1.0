@@ -282,7 +282,7 @@ public class MgmtAppController {
 				Date timeStart = null, timeEnd = null;
 				Double maxSpeedKmH = 0.0;
 
-				Float lastLat = null, lastLon = null;
+				Double lastLat = null, lastLon = null;
 				Double totalLengthKm = 0.0;
 
 				/*
