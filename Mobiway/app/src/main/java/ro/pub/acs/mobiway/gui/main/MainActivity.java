@@ -5,12 +5,12 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,6 +23,10 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 
+import com.facebook.AccessToken;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.HttpMethod;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -43,7 +47,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -69,9 +72,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.Timer;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 import retrofit.RetrofitError;
@@ -81,6 +82,9 @@ import ro.pub.acs.mobiway.core.RoutingHelper;
 import ro.pub.acs.mobiway.general.Constants;
 import ro.pub.acs.mobiway.general.SharedPreferencesManagement;
 import ro.pub.acs.mobiway.general.Util;
+import ro.pub.acs.mobiway.gui.ConfirmJourneyFragment;
+import ro.pub.acs.mobiway.gui.IConfirmJourneyResponse;
+import ro.pub.acs.mobiway.gui.PostJourneyDetailsToFacebookFragment;
 import ro.pub.acs.mobiway.gui.events.EventsActivity;
 import ro.pub.acs.mobiway.gui.settings.SettingsActivity;
 import ro.pub.acs.mobiway.gui.statistics.StatisticsActivity;
@@ -89,12 +93,14 @@ import ro.pub.acs.mobiway.rest.RestClient;
 import ro.pub.acs.mobiway.rest.model.Place;
 import ro.pub.acs.mobiway.rest.model.Policy;
 import ro.pub.acs.mobiway.rest.model.Position;
+import ro.pub.acs.mobiway.rest.model.PostJourneyDetailsRequest;
+import ro.pub.acs.mobiway.rest.model.RoutingResponse;
 import ro.pub.acs.mobiway.rest.model.User;
 
 
 public class MainActivity extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, LocationListener,
-        /*GoogleMap.OnMarkerClickListener, */ GoogleMap.OnMapClickListener {
+        /*GoogleMap.OnMarkerClickListener, */ GoogleMap.OnMapClickListener, IConfirmJourneyResponse, IConfirmPostToFacebook {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static List<User> friendsNames = null;
@@ -131,6 +137,11 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
             return;
         }
 
+        final CountDownLatch latch = new CountDownLatch(1);
+        final double[] value = new double[1];
+
+        List<ro.pub.acs.mobiway.rest.model.Location> points;
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -166,8 +177,14 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
 
                         Log.d("ro.pub.acs.mobiway", location1.toString() + "---" + location2.toString());
 
-                        List<ro.pub.acs.mobiway.rest.model.Location> result = restClient.getApiService().getRoute(locations);
-                        showRouteOnMap(result);
+                        RoutingResponse result = restClient.getApiService().getRoute(locations);
+
+                        List<ro.pub.acs.mobiway.rest.model.Location> points = result.getRoutePoints();
+                        showRouteOnMap(points);
+                        //postJourneyDetailsToFacebook(points, 1000 * 60 * 13, 14);
+
+                        value[0] = result.getEstimatedTravelTime();
+                        latch.countDown();
 
                     } else if (routingEngine.equalsIgnoreCase("pgrouting")) {
 
@@ -188,7 +205,55 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
             }
         });
         thread.start();
+        try {
+            latch.await();
+        } catch (InterruptedException ie) {
 
+        }
+
+        //showConfirmJourneyFragment((int) (value[0]/ 60));
+        showPostJourneyDetailsFragment();
+    }
+
+    private void showPostJourneyDetailsFragment() {
+        PostJourneyDetailsToFacebookFragment postJourneyDetailsToFacebookFragment = new PostJourneyDetailsToFacebookFragment();
+        postJourneyDetailsToFacebookFragment.show(getFragmentManager(), "post-journey");
+    }
+
+    private void showConfirmJourneyFragment(int arrivalMinutes, Location endJourney) {
+        ConfirmJourneyFragment confirmJourneyFragment = new ConfirmJourneyFragment();
+        Bundle args = new Bundle();
+        args.putInt("arrival_minutes", arrivalMinutes);
+        args.putDouble("end_journey_latitude", endJourney.getLatitude());
+        args.putDouble("end_journey_longitude", endJourney.getLongitude());
+        confirmJourneyFragment.setArguments(args);
+        confirmJourneyFragment.show(getFragmentManager(), "confirm-journey");
+    }
+
+    private List<ro.pub.acs.mobiway.rest.model.Location> locations;
+    int durationInMillies;
+    double meanSpeed;
+
+    public void postJourneyDetailsToFacebook() {
+        final PostJourneyDetailsRequest postJourneyDetailsRequest = new PostJourneyDetailsRequest();
+        postJourneyDetailsRequest.setLocations(locations);
+        postJourneyDetailsRequest.setDurationInMillis(durationInMillies);
+        postJourneyDetailsRequest.setMeanSpeed(meanSpeed);
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    RestClient restClient = new RestClient();
+
+                    boolean result = restClient.getApiService().postJourneyDetailsToFacebook(postJourneyDetailsRequest);
+
+                } catch (Exception e) {
+
+                }
+            }
+        });
+        thread.start();
     }
 
 
@@ -217,6 +282,9 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                 .addApi(Places.PLACE_DETECTION_API)
                 .build();
 
+        ActivityCompat.requestPermissions(this,new String[]   {
+                Manifest.permission.ACCESS_FINE_LOCATION}, 33);
+
         locationRequest = new LocationRequest();
         locationRequest.setInterval(Constants.LOCATION_REQUEST_INTERVAL);
         locationRequest.setFastestInterval(Constants.LOCATION_REQUEST_FASTEST_INTERVAL);
@@ -233,7 +301,7 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
         }
 
         getNearbyLocations();
-        getTrafficEvents();
+        //getTrafficEvents();
 
         places = new ArrayList<>();
         placesAdapter = new PlacesAdapter(this, places);
@@ -325,7 +393,10 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                         Position position = new Position(location.getLatitude(), location.getLongitude(), location.getSpeed());
 
                         try {
-                            restClient.getApiService().sendPosition(position);
+                            boolean isJourneyEnded = restClient.getApiService().sendPosition(position);
+                            if (isJourneyEnded) {
+                                showPostJourneyDetailsFragment();
+                            }
                         } catch (RetrofitError retrofitError) {
                             retrofitError.printStackTrace();
                         }
@@ -1263,5 +1334,26 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
         }
 
         return (BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+    }
+
+    @Override
+    public void onStartJourneyOK(final ro.pub.acs.mobiway.rest.model.Location endJourney) {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    RestClient restClient = new RestClient();
+                    restClient.getApiService().startJourney(endJourney);
+                } catch (Exception e) {
+                    Log.d("start-journey", "Start journey failed " + e);
+                }
+            }
+        });
+        thread.start();
+    }
+
+    @Override
+    public void onStartJourneyCancelled() {
+
     }
 }

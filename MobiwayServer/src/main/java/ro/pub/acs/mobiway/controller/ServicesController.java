@@ -33,7 +33,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ro.pub.acs.mobiway.dao.*;
 import ro.pub.acs.mobiway.model.*;
+import ro.pub.acs.mobiway.service.PostJourneyStatusToFacebookTask;
 import ro.pub.acs.mobiway.utils.Constants;
+
+import javax.ws.rs.core.Response;
 
 @SuppressWarnings("deprecation")
 @RestController
@@ -74,10 +77,11 @@ public class ServicesController {
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/location/getEvent", method = RequestMethod.PUT)
 	public @ResponseBody List<UserEvent> getEvent(
-			@RequestBody Location location,
-			@RequestHeader("X-Auth-Token") String authToken) {
-
-		User user = userDAO.get(authToken, location.getIdUser());
+			@RequestBody Location location)
+			//@RequestHeader("X-Auth-Token") String authToken) {
+	{
+		User user = null;
+		//User user = userDAO.get(authToken, location.getIdUser());
 		if (user == null) {
 			return null;
 		}
@@ -96,11 +100,12 @@ public class ServicesController {
 			@PathVariable Float timeSinceEvent,
 			@PathVariable Float spaceAccuracy,
 			@PathVariable Float timeAccuracy,
-			@RequestBody Location location,
-			@RequestHeader("X-Auth-Token") String authToken
+			@RequestBody Location location
+			//@RequestHeader("X-Auth-Token") String authToken
 			) {
 
-		User user = userDAO.get(authToken, location.getIdUser());
+		//User user = userDAO.get(authToken, location.getIdUser());
+		User user = null;
 		if (user == null) {
 			return false;
 		}
@@ -180,12 +185,13 @@ public class ServicesController {
 			method = RequestMethod.GET)
 	public @ResponseBody List<Policy> getUserPolicyListForApp(
 			@PathVariable Integer userId,
-			@PathVariable String appId,
-			@RequestHeader("X-Auth-Token") String authToken) {
+			@PathVariable String appId)
+			//@RequestHeader("X-Auth-Token") String authToken) {
+	{
 
 		List <Policy> acceptedPolicies = new ArrayList<Policy>();
-		User user = userDAO.get(authToken, userId);
-		
+		//User user = userDAO.get(authToken, userId);
+		User user = null;
 		if (user != null) {
 			List<UserPolicy> userPolicies =
 			userPolicyDAO.getUserAcceptedPoliciesByApp(user, appId);
@@ -199,16 +205,35 @@ public class ServicesController {
 		return acceptedPolicies;
 	}
 
+	@RequestMapping(value = "/journey/startJourney",
+			method = RequestMethod.POST)
+	public @ResponseBody boolean startJourney(
+			@RequestBody Location location,
+			@RequestHeader("X-Auth-Token") String authToken
+	) {
+		User user = userDAO.get(authToken);
+		if (user != null && !user.isJourneyInProgress()) {
+			user.setJourneyInProgress(true);
+			user.setEndJourneyLatitude(location.getLatitude());
+			user.setEndJourneyLongitde(location.getLongitude());
+			userDAO.update(user);
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	@RequestMapping(value = "/authenticate/acceptUserPolicyListForApp/{userId}/{appId}",
 			method = RequestMethod.POST)
 	public @ResponseBody boolean acceptPolicyListForApp(
 			@PathVariable Integer userId,
 			@PathVariable String appId,
-			@RequestHeader("X-Auth-Token") String authToken,
+			//@RequestHeader("X-Auth-Token") String authToken,
 			@RequestBody List<String> policyList) {
 
-		User user = userDAO.get(authToken, userId);
-		
+		//User user = userDAO.get(authToken, userId);
+		User user = null;
+
 		if (user != null) {
 			userPolicyDAO.clearPolicies(user, appId);
 			
@@ -313,9 +338,11 @@ public class ServicesController {
 	}
 
 	@RequestMapping(value = "/location/newJourney", method = RequestMethod.POST)
-	public @ResponseBody boolean newJourney(@RequestBody Integer userId,
-			@RequestHeader("X-Auth-Token") String authToken) {
-		User user = userDAO.get(authToken, userId);
+	public @ResponseBody boolean newJourney(@RequestBody Integer userId)
+			//@RequestHeader("X-Auth-Token") String authToken)
+	{
+		//User user = userDAO.get(authToken, userId);
+		User user = null;
 
 		if (user != null) {
 			Journey journey = new Journey();
@@ -486,11 +513,25 @@ public class ServicesController {
 
 	}
 
+	private boolean isJourneyEnding(Position position, User user) {
+		float distanceToDestination = distFrom(position.getLatitude(), position.getLongitude(),
+				user.getEndJourneyLatitude(), user.getEndJourneyLongitde());
+
+		if (distanceToDestination < 5) {
+			return true;
+		}
+
+		return false;
+	}
+
 	@RequestMapping(value = "/position/update", method = RequestMethod.PUT)
 	public @ResponseBody boolean updatePosition(@RequestBody Position position,
-												@RequestHeader("X-Auth-Token") String authToken) {
+												@RequestHeader("X-Auth-Token") String authToken)
+	{
 
 		updateWaypointMeanSpeed(position);
+
+		User user = userDAO.get(authToken);
 
 		HttpClient httpClient = new DefaultHttpClient();
 
@@ -578,14 +619,20 @@ public class ServicesController {
 				System.out.println("nu merge");
 			}
 		}
+
+		if (isJourneyEnding(position, user)) {
+			return true;
+		}
 		return false;
 	}
 
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/location/update", method = RequestMethod.PUT)
-	public @ResponseBody boolean updateLocation(@RequestBody Location location,
-			@RequestHeader("X-Auth-Token") String authToken) {
-		User user = userDAO.get(authToken, location.getIdUser());
+	public @ResponseBody boolean updateLocation(@RequestBody Location location)
+			//@RequestHeader("X-Auth-Token") String authToken)
+	{
+		//User user = userDAO.get(authToken, location.getIdUser());
+		User user = null;
 
 		if (user != null) {
 	
@@ -633,8 +680,9 @@ public class ServicesController {
 
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/location/saveHistory", method = RequestMethod.POST)
-	public @ResponseBody boolean saveHistory(@RequestBody ArrayList<Location> locations,
-			@RequestHeader("X-Auth-Token") String authToken) {
+	public @ResponseBody boolean saveHistory(@RequestBody ArrayList<Location> locations)
+			//@RequestHeader("X-Auth-Token") String authToken) {
+	{
 
 		if (locations == null || locations.size() == 0) {
 			return true;
@@ -642,7 +690,8 @@ public class ServicesController {
 
 		// The id of the user is contained inside the location
 		// TODO: add it as a parameter instead
-		User user = userDAO.get(authToken, locations.get(0).getIdUser());
+		//User user = userDAO.get(authToken, locations.get(0).getIdUser());
+		User user = null;
 		if (user == null) {
 			return false;
 		}
@@ -734,9 +783,11 @@ public class ServicesController {
 	}
 
 	@RequestMapping(value = "/social/getFriendsNames", method = RequestMethod.GET)
-	public @ResponseBody List<User> getFriendsNames(
-			@RequestHeader("X-Auth-Token") String authToken) {
-		User user = userDAO.get(authToken, 0);
+	public @ResponseBody List<User> getFriendsNames()
+			//@RequestHeader("X-Auth-Token") String authToken)
+			 {
+				 User user = null;
+		//User user = userDAO.get(authToken, 0);
 		List<User> friends = new ArrayList<User>();
 
 		if (user != null) {
@@ -767,9 +818,10 @@ public class ServicesController {
 	}
 
 	@RequestMapping(value = "/social/getFriendsLocations", method = RequestMethod.GET)
-	public @ResponseBody List<Location> getFriendsLocations(
-			@RequestHeader("X-Auth-Token") String authToken) {
-		User user = userDAO.get(authToken, 0);
+	public @ResponseBody List<Location> getFriendsLocations() {
+			//@RequestHeader("X-Auth-Token") String authToken) {
+		//User user = userDAO.get(authToken, 0);
+		User user = null;
 		List<User> friends = new ArrayList<User>();
 		List<Location> locations = new ArrayList<Location>();
 
@@ -788,9 +840,11 @@ public class ServicesController {
 	}
 
 	@RequestMapping(value = "/social/getUsersWithPhone", method = RequestMethod.GET)
-	public @ResponseBody List<User> getUsersWithPhone(
-			@RequestHeader("X-Auth-Token") String authToken) {
-		User user = userDAO.get(authToken, 0);
+	public @ResponseBody List<User> getUsersWithPhone()
+			//@RequestHeader("X-Auth-Token") String authToken) {
+	{
+		//User user = userDAO.get(authToken, 0);
+		User user = null;
 		List<User> users = new ArrayList<User>();
 
 		if (user != null) {
@@ -802,9 +856,10 @@ public class ServicesController {
 
 	@RequestMapping(value = "/social/addFriends", method = RequestMethod.PUT)
 	public @ResponseBody boolean addFriends(
-			@RequestHeader("X-Auth-Token") String authToken,
+			//@RequestHeader("X-Auth-Token") String authToken,
 			@RequestBody List<User> friends) {
-		User user = userDAO.get(authToken, 0);
+		//User user = userDAO.get(authToken, 0);
+		User user = null;
 		List<String> oldFriends = new ArrayList<String>();
 		
 		if (user == null) {
@@ -832,7 +887,7 @@ public class ServicesController {
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/social/getNearbyLocations", method = RequestMethod.POST)
 	public @ResponseBody List<Place> getNearbyLocations(
-			@RequestHeader("X-Auth-Token") String authToken,
+			//@RequestHeader("X-Auth-Token") String authToken,
 			@RequestBody List<String> types) {
 		ArrayList<Place> aPlace = new ArrayList<Place>();
 		
@@ -872,10 +927,25 @@ public class ServicesController {
 		return aPlace;
 	}
 
+	@RequestMapping(value = "/social/postJourneyDetails", method = RequestMethod.POST)
+	public Response postJourneyDetailsToFacebook(
+			@RequestBody PostJourneyDetailsRequest postJourneyDetailsRequest
+	) {
+
+		PostJourneyStatusToFacebookTask postJourneyStatusToFacebookTask =
+				new PostJourneyStatusToFacebookTask(postJourneyDetailsRequest.getMeanSpeed(),
+						postJourneyDetailsRequest.getDurationInMillis(), postJourneyDetailsRequest.getLocations());
+
+		postJourneyStatusToFacebookTask.start();
+
+		Response.ResponseBuilder responseBuilder = Response.ok();
+		return responseBuilder.build();
+	}
+
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/social/getRoutePG", method = RequestMethod.POST)
 	public @ResponseBody List<Location> getRoutePgRouting(
-			@RequestHeader("X-Auth-Token") String authToken,
+			//@RequestHeader("X-Auth-Token") String authToken,
 			@RequestBody ArrayList<Location> locations) {
 		ArrayList<Location> routePoints = new ArrayList<Location>();
 		System.out.println("get PG route------------");
@@ -929,13 +999,16 @@ Calendar end = Calendar.getInstance();
 	
 	@SuppressWarnings({ "deprecation", "resource" })
 	@RequestMapping(value = "/social/getRoute", method = RequestMethod.POST)
-	public @ResponseBody List<Location> getRoute(
-			@RequestHeader("X-Auth-Token") String authToken,
+	public @ResponseBody RoutingResponse getRoute(
+			//@RequestHeader("X-Auth-Token") String authToken,
 			@RequestBody ArrayList<Location> locations) {
 		ArrayList<Location> routePoints = new ArrayList<Location>();
 		System.out.println("get route------------");
 		
 		Calendar start = Calendar.getInstance();
+
+		double overallTime = 0;
+		double currentStepSpeed = 0, previousStepSpeed = 0;
 		
 		try {
 			HttpClient httpClient = new DefaultHttpClient();
@@ -964,18 +1037,22 @@ Calendar end = Calendar.getInstance();
 		    	JSONArray steps = firstLeg.getJSONArray("steps");
 		    	
 		    	if(coordinates != null){
+
 		    	    locations.get(0).setColor("BLACK");
 		    		routePoints.add(locations.get(0));
+
+					Location location = null;
 		    		for(int i = 0; i < coordinates.length(); i++){
 			    		//String point = viaPoints.getString(i);
-			    	
-			    		Location location = new Location();
+
+						location = new Location();
 			    		location.setIdUser(0);
 
 			    		JSONArray coord = coordinates.getJSONArray(i);
 			    		location.setLatitude(coord.getDouble(1));
 	  		            location.setLongitude(coord.getDouble(0));
 			    		//location.setSpeed(0);
+
 						loop: for (int j = 0; j < coordinates.length(); j++) {
 							JSONObject step = steps.getJSONObject(j);
 							JSONObject geometryStep = step.getJSONObject("geometry");
@@ -985,6 +1062,7 @@ Calendar end = Calendar.getInstance();
 								JSONArray coordinateStep = coordinatesStep.getJSONArray(k);
 								if (coordinateStep.getDouble(0) == coord.getDouble(0) &&
 										coordinateStep.getDouble(1) == coord.getDouble(1)) {
+
 									String streetName = step.getString("name");
 									List<WaypointMeanSpeed> waypointMeanSpeeds = waypointMeanSpeedDAO.getWaypointMeanSpeedByStreetName(streetName);
 									float minDist = 99999;
@@ -1009,6 +1087,17 @@ Calendar end = Calendar.getInstance();
 										location.setColor("RED");
 									}
 
+									if (minDistWaypoint != null) {
+										currentStepSpeed = minDistWaypoint.getMeanSpeed();
+									} else {
+										currentStepSpeed = previousStepSpeed;
+									}
+									double stepDistance = step.getDouble("distance");
+
+									overallTime += stepDistance * (currentStepSpeed + previousStepSpeed) / 2;
+
+									previousStepSpeed = currentStepSpeed;
+
 									break loop;
 								}
 							}
@@ -1021,6 +1110,10 @@ Calendar end = Calendar.getInstance();
 			    	}
                     locations.get(1).setColor("BLACK");
 		    		routePoints.add(locations.get(1));
+
+		    		double lastDistance = distFrom(locations.get(1).getLatitude(), locations.get(1).getLongitude(),
+							location.getLatitude(), location.getLongitude());
+					overallTime += lastDistance * (currentStepSpeed + 0) / 2;
 		    	}
 		    	
 		    }            
@@ -1031,14 +1124,16 @@ Calendar end = Calendar.getInstance();
 			exception.printStackTrace();
 		}
 		
-Calendar end = Calendar.getInstance();
+		Calendar end = Calendar.getInstance();
 		
 		/*if (Constants.DEBUG_MODE) {
 			saveRouteToFile("OSRM", routePoints, start, end);
 		}*/
 
-		
-		return routePoints;
+		RoutingResponse routingResponse = new RoutingResponse();
+		routingResponse.setRoutePoints(routePoints);
+		routingResponse.setEstimatedTravelTime(overallTime);
+		return routingResponse;
 	}
 	
 }

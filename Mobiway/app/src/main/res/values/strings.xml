@@ -119,6 +119,10 @@
     <string name="loading">Loading..</string>
     <string name="share_location">Share My Location</string>
     <string name="share_speed">Share My Speed</string>
+    <string name="confirm_journey">Estimated arrival time: %d:%d</string>
+    <string name="post_journey_info">Your journey completed successfully! Do you want to post the details to Facebook?</string>
+    <string name="proceed">Go!</string>
+    <string name="cancel">Cancel</string>
 
     <!-- Map -->
     <string name="show_route">Show Route</string>

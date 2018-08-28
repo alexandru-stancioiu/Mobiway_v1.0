@@ -282,7 +282,12 @@ public class LoginFragment extends Fragment {
                                                     user.setFacebookExpiresIn(tokenExpiresIn);
                                                     user.setPassword("");
 
-                                                    restClient.getApiService().loginFacebook(user, new Callback<User>() {
+                                                    Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
+                                                    startActivity(intent);
+                                                    getActivity().finish();
+
+
+                                                    /*restClient.getApiService().loginFacebook(user, new Callback<User>() {
                                                         @Override
                                                         public void success(User result, Response response) {
                                                             if (result != null) {
@@ -304,7 +309,7 @@ public class LoginFragment extends Fragment {
                                                         public void failure(RetrofitError error) {
 
                                                         }
-                                                    });
+                                                    });*/
 
 
                                                 } catch (Exception e) {

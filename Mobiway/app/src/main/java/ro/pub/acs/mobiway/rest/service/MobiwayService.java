@@ -3,12 +3,9 @@ package ro.pub.acs.mobiway.rest.service;
 import java.util.*;
 
 import retrofit.Callback;
-import retrofit.client.Response;
 import retrofit.http.*;
 
 import ro.pub.acs.mobiway.general.Constants;
-import ro.pub.acs.mobiway.general.SharedPreferencesManagement;
-import ro.pub.acs.mobiway.gui.auth.LoginFragment;
 import ro.pub.acs.mobiway.rest.TypedJsonString;
 import ro.pub.acs.mobiway.rest.model.*;
 
@@ -117,6 +114,13 @@ public interface MobiwayService {
             "Content-Type: application/json",
             "Accept: application/json"
     })
+    @POST(Constants.URL_START_JOURNEY)
+    boolean startJourney(@Body Location endJourney);
+
+    @Headers({
+            "Content-Type: application/json",
+            "Accept: application/json"
+    })
     @GET(Constants.URL_GET_FRIENDS_NAMES)
     List<User> getFriendsNames();
 
@@ -167,7 +171,14 @@ public interface MobiwayService {
             "Accept: application/json"
     })
     @POST(Constants.URL_GET_ROUTE)
-    List<Location> getRoute(@Body ArrayList<Location> locations);
+    RoutingResponse getRoute(@Body ArrayList<Location> locations);
+
+    @Headers({
+            "Content-Type: application/json",
+            "Accept: application/json"
+    })
+    @POST(Constants.URL_POST_JOURNEY_DETAILS_TO_FACEBOOK)
+    boolean postJourneyDetailsToFacebook(@Body PostJourneyDetailsRequest postJourneyDetailsRequest);
 
     @Headers({
             "Content-Type: application/json",

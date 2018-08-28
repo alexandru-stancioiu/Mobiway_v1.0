@@ -62,6 +62,39 @@ public class User implements Serializable {
 	@Column(name = "uuid")
 	private String uuid;
 
+	@Column(name = "journeyInProgress")
+	private boolean journeyInProgress;
+
+	@Column(name = "endJourneyLongitde")
+	private Double endJourneyLongitde;
+
+	public Double getEndJourneyLongitde() {
+		return endJourneyLongitde;
+	}
+
+	public void setEndJourneyLongitde(Double endJourneyLongitde) {
+		this.endJourneyLongitde = endJourneyLongitde;
+	}
+
+	public Double getEndJourneyLatitude() {
+		return endJourneyLatitude;
+	}
+
+	public void setEndJourneyLatitude(Double endJourneyLatitude) {
+		this.endJourneyLatitude = endJourneyLatitude;
+	}
+
+	@Column(name = "endJourneyLatitude")
+	private Double endJourneyLatitude;
+
+	public boolean isJourneyInProgress() {
+		return journeyInProgress;
+	}
+
+	public void setJourneyInProgress(boolean journeyInProgress) {
+		this.journeyInProgress = journeyInProgress;
+	}
+
 	/*@OneToMany(cascade = CascadeType.ALL, mappedBy = "idFriendUser")
 	private Collection<UserContact> userContactCollection;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idUser")

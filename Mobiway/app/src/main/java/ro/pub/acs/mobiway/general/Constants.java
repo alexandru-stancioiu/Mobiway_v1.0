@@ -21,8 +21,8 @@ public abstract class Constants {
     /* URLs for WEB Services */
     public static final String APP_NAME     = "Mobiway";
     //public static final String SERVICES_URL = "http://mobiway.hpc.pub.ro:8082/MobiwayServer/services";
-    //public static final String SERVICES_URL = "http://192.168.10.105:8080/services";
-    public static final String SERVICES_URL = "http://5.12.69.12:8080/services";
+    public static final String SERVICES_URL = "http://192.168.10.102:8080/services";
+    //public static final String SERVICES_URL = "http://5.12.69.12:8080/services";
 
     public static final String URL_CHECK_SERVER_CONN    = "/checkServerConn";
     public static final String URL_CREATE_ACCOUNT       = "/signup/userpass";
@@ -44,6 +44,7 @@ public abstract class Constants {
     public static final String URL_GET_EVENT            = "/location/getEvent";
     public static final String URL_POST_EVENT           = "/location/postEvent";
 
+    public static final String URL_START_JOURNEY = "/journey/startJourney";
 
     public static final String URL_GET_FRIENDS_NAMES        = "/social/getFriendsNames";
     public static final String URL_GET_FRIENDS_LOCATIONS    = "/social/getFriendsLocations";
@@ -53,6 +54,8 @@ public abstract class Constants {
     public static final String URL_GET_ROUTE                = "/social/getRoute";
     public static final String URL_GET_ROUTE_PG             = "/social/getRoutePG";
     public static final String URL_GET_ROUTE_FROM_MAPZEN    = "/social/getRouteFromMapzen";
+
+    public static final String URL_POST_JOURNEY_DETAILS_TO_FACEBOOK = "/social/postJourneyDetails";
 
     public static final String URL_SEND_POSITION = "/position/update";
 
